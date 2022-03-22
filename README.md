@@ -1,2 +1,2 @@
-# JSsiteTemplate
-Site template for JS projects
+# Rewind
+A JavaScript coding project using arrays to display a string in reverse.
