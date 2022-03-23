@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: A Coding Project By Thato Ramphore</title>
+    <title>REWIND: A Coding Project By Thato Ramphore</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,7 +20,7 @@
 <!-- NAV SECTION -->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"> <img src="img/TR_Logo_SVG3.svg" alt="Thato Ramphore Logo" class="d-inline-block text-align-top" width="30" height="24"> APPNAME</a>
+        <a class="navbar-brand" href="#"> <img src="img/TR_Logo_SVG3.svg" alt="Thato Ramphore Logo" class="d-inline-block text-align-top" width="30" height="24"> REWIND</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -48,8 +48,32 @@
 </nav>
 <!-- MAIN SECTION -->
 <main class="flex-shrink-0">
-    <div class="container">
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-lg-2 gy-3">
+            <div class="col">
+                <h1 class="display-5 fw-bold lh-1 mb-3">REWIND: A Coding Project</h1>
+                <h4 class="lead">There and back again. A JavaScript coding exercise using arrays. Write a program that displays a string in reverse.</h4>
+            </div>
 
+            <div class="col">
+                <h5 class="border-1 border-bottom border-danger">Enter A String To Reverse</h5>
+                <form class="row gx-3 gy-2 row-cols-1 row-cols-lg-2 gy-3">
+                    <div class="col">
+                        <input id="userString" type="text" class="form-control" placeholder="Enter a string" aria-label="Enter a string">
+                    </div>
+                    <div class="col-12">
+                        <button id="btnSubmit" class="btn btn-danger" type="button">Reverse Me</button>
+                    </div>
+                    <div class="alert alert-success mt-5 invisible fade show" id="alert" role="alert">
+                        <h4 class="alert-heading">Well Done!</h4>
+                        <hr>
+                        <p class="mb-0" id="msg">
+                            <!-- Insert a message using innerHTML-->
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </main>
 <!-- FOOTER SECTION -->
@@ -78,6 +102,10 @@ integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2TH
 </script>
 <!-- EXTERNAL JS SCRIPT -->
 <script src="/js/site.js"></script>
+<!-- reverse onclick handler -->
+<script>
+    document.getElementById("btnSubmit").addEventListener("click", getValue);
+</script>
 
 </body>
 </html>
